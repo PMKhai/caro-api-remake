@@ -1,13 +1,8 @@
+const databaseConfig = {
+  USER: 'khai_pham',
+  PASSWORD: '123456a',
+};
+
 module.exports = {
-  HOST: 'localhost',
-  USER: 'root',
-  PASSWORD: '123456',
-  DB: 'testdb',
-  dialect: 'mysql',
-  pool: {
-    max: 5,
-    min: 0,
-    acquire: 30000,
-    idle: 10000,
-  },
+  PROD_URI: `mongodb+srv://${databaseConfig.USER}:${databaseConfig.PASSWORD}@db.hd7kx.mongodb.net/?retryWrites=true&w=majority`,
 };
